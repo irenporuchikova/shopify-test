@@ -49,7 +49,7 @@
       }
     },
     "featured_collection": {
-      "type": "featured-collection",
+      "type": "new-featured-collection",
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
