@@ -1,0 +1,129 @@
+.featured-section {
+  padding: 40px 0;
+  background: $light-gray;
+  color: $base-text-color;
+  font: #{$font-size-base}/#{$line-height-base} $base-font-family;
+  box-sizing: border-box;
+
+  @include media(">=desktop") {
+    padding: 80px 0;
+  }
+
+  &__container{
+    max-width: 1110px;
+    margin: 0 auto;
+
+    @include media(">=tablet") {
+      padding: 0 15px;
+    }
+
+    @include media(">=desktop") {
+      padding: 0 20px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 30px;
+
+    @include media(">=desktop") {
+      margin-bottom: 51px;
+    }
+
+    *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  img{
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  h2,
+  h3{
+    font-family: $headings-font-family;
+    color: $headings-color;
+    margin: 0;
+
+    a{
+      color: $headings-color;
+      text-decoration: none;
+
+      &:hover{
+        color: $primary-color;
+      }
+    }
+  }
+
+  h2{
+    font-size: $h2-font-size;
+    font-weight: 900;
+
+    @include media(">=tablet") {
+      font-size: 42px;
+    }
+  }
+
+  h3 {
+    font-size: $h3-font-size;
+    font-weight: 700;
+  }
+}
+
+.cards{
+  display: grid;
+  gap: 50px;
+
+  @include media(">=tablet") {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 50px;
+  }
+
+  @include media(">=desktop") {
+    column-gap: 40px;
+    row-gap: 110px;
+  }
+}
+
+.card{
+  text-align: center;
+
+  &__img{
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+
+  &__content{
+    padding: 0 45px;
+  }
+
+  &__title{
+    margin-bottom: 15px;
+
+    *:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  &__button{
+    display: inline-block;
+    width: 100%;
+    max-width: 285px;
+    vertical-align: top;
+    background: $btn-background;
+    color: $btn-color;
+    padding: $btn-padding;
+    border-radius: 31px;
+    text-decoration: none;
+    transition: color $animation-speed ease-in-out, background $animation-speed ease-in-out, border $animation-speed ease-in-out;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      background: darken($btn-background, 10%);
+    }
+  }
+}

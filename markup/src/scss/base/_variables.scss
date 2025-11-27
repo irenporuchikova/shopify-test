@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;700;900&display=swap');
+
+
+// Colors
+$white: #fff;
+$light-gray: #F5F5F5;
+$gray: #656874;
+$blue: #464B90;
+
+$primary-color: $blue;
+
+// Body
+$base-font-sans-serif: 'Gothic A1', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+$base-text-color: $gray !default;
+$base-background-color: $white !default;
+$font-size-base: 16px !default;
+$line-height-base: 1.4 !default;
+$base-font-family: $base-font-sans-serif !default;
+$base-min-width: 320px;
+
+
+// Buttons 
+$btn-color: $white !default;
+$btn-background: $blue !default;
+$btn-padding: 20px !default;
+$btn-font-size: inherit !default;
+
+// Headers
+$h2-font-size: 26px !default;
+$h3-font-size: 22px !default;
+
+$headings-font-family: inherit !default;
+$headings-color: inherit !default;
