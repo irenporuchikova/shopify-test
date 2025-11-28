@@ -39,6 +39,7 @@
 }
 .featured-section img {
   max-width: 100%;
+  max-height: 100%;
   display: inline-block;
   vertical-align: top;
 }
@@ -97,6 +98,8 @@
 .card__img {
   display: inline-block;
   margin-bottom: 30px;
+  height: 340px;
+  width: 100%;
 }
 .card__content {
   padding: 0 45px;
@@ -109,6 +112,8 @@
 }
 .card__button {
   display: inline-block;
+  outline: none;
+  border: none;
   width: 100%;
   max-width: 285px;
   vertical-align: top;
@@ -116,10 +121,20 @@
   color: #fff;
   padding: 20px;
   border-radius: 31px;
+  font-size: 16px;
   text-decoration: none;
   transition: color 0.3s ease-in-out, background 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 .card__button:hover, .card__button:focus {
   color: #fff;
   background: #35396e;
+}
+.card__button:disabled {
+  opacity: 0.6;
+}
+.card__button .loading__spinner {
+  margin-left: 10px;
+}
+.card__button .loading__spinner .path {
+  stroke: #fff;
 }

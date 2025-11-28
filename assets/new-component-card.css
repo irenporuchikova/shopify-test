@@ -25,6 +25,8 @@
 .card__img {
   display: inline-block;
   margin-bottom: 30px;
+  height: 340px;
+  width: 100%;
 }
 .card__content {
   padding: 0 45px;
@@ -37,6 +39,9 @@
 }
 .card__button {
   display: inline-block;
+  font: 16px/1.4 "Gothic A1", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  outline: none;
+  border: none;
   width: 100%;
   max-width: 285px;
   vertical-align: top;
@@ -50,4 +55,14 @@
 .card__button:hover, .card__button:focus {
   color: #fff;
   background: #35396e;
+}
+
+.card__button:disabled {
+  opacity: 0.6;
+}
+.card__button .loading__spinner {
+  margin-left: 10px;
+}
+.card__button .loading__spinner .path {
+  stroke: #fff;
 }
